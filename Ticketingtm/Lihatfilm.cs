@@ -74,6 +74,7 @@ namespace Ticketingtm
             using (MySqlConnection connect = new MySqlConnection("server=localhost;userid=root;password=;database=db_ticket"))
             {
                 connect.Open();
+                //Select untuk menampilkan data ke datagrid dengan melakukan join antar tabel karena membutuhkan satu kolom yang penting
                 MySqlDataAdapter sda = new MySqlDataAdapter("SELECT tf.kode_film, tf.judul_film, tf.durasi, ty.waktu_tayang" +
                     " FROM tbl_film tf INNER JOIN tbl_tayang ty ON tf.kode_film = ty.kode_film ", connect);
                 DataTable dtab = new DataTable();

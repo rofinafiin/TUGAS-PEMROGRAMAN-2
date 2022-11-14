@@ -17,6 +17,7 @@ namespace Ticketingtm
         {
             InitializeComponent();
         }
+        //Mengkoneksikan Database MySql
         MySqlConnection connect = new MySqlConnection("server=localhost;userid=root;password=;database=db_ticket");
         private void button2_Click(object sender, EventArgs e)
         {
@@ -32,13 +33,14 @@ namespace Ticketingtm
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Mempermudah untuk text dengan membuatnya menjadi variable
             string pass, nama, user;
             nama = txt_nama.Text;
             user = txt_username.Text;
             pass = txt_password.Text;
+            //Fungsi Insert untuk database
             string que = "INSERT INTO tbl_user VALUES(NULL, '"+user+"', '"+pass+"', '"+nama+"')";
             MySqlDataAdapter sda = new MySqlDataAdapter(que, connect);
-
             DataTable dtab = new DataTable();
             sda.Fill(dtab);
             MessageBox.Show("Asik Berhasil Daftar");

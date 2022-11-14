@@ -15,6 +15,7 @@ namespace Ticketingtm
         {
             InitializeComponent();
         }
+        //Connect db
         MySqlConnection connect = new MySqlConnection("server=localhost;userid=root;password=;database=db_ticket");
         conn konek = new conn();
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -35,6 +36,7 @@ namespace Ticketingtm
             pass = txt_password.Text;
             try
             {
+                //Seelect untuk mengecek user tsb ada di db atau tidak
                 string que = "SELECT * FROM tbl_user WHERE Username = '" + user + "'AND Password = '" + pass + "'";
                 MySqlDataAdapter sda = new MySqlDataAdapter(que, connect);
 

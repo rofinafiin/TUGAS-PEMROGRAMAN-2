@@ -37,6 +37,11 @@ namespace Ticketingtm
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button7
@@ -120,20 +125,86 @@ namespace Ticketingtm
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(350, 86);
+            this.label1.Location = new System.Drawing.Point(230, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 62);
+            this.label1.Size = new System.Drawing.Size(487, 20);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Selamat Datang di \r\nBOOKERS.APP";
+            this.label1.Text = "Menu Bookinganku untuk mengecek daftar booking hapus dan edit data";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label2.Location = new System.Drawing.Point(230, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(425, 20);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Menu Booking berfungsi untuk melakukan proses Booking tiket";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label3.Location = new System.Drawing.Point(230, 139);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(448, 20);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Menu Lihat Film Digunakan Untuk Melihat Daftar Film yang tayang";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label4.Location = new System.Drawing.Point(230, 192);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(409, 20);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Menu About Berisi Informasi yang berkaitan dengan Aplikasi";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label5.Location = new System.Drawing.Point(230, 245);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(460, 20);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Menu Help Merupakan menu penjelasan untuk setiap Fitur yang Ada";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label6.Location = new System.Drawing.Point(230, 298);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(444, 20);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Menu Utama merupakan Landing Page yang ada pada Aplikasi Ini";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Help
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(749, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
@@ -159,5 +230,10 @@ namespace Ticketingtm
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

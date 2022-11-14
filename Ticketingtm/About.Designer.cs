@@ -110,13 +110,15 @@ namespace Ticketingtm
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(376, 86);
+            this.label1.Location = new System.Drawing.Point(347, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 62);
+            this.label1.Size = new System.Drawing.Size(397, 175);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Selamat Datang di \r\nBOOKERS.APP";
+            this.label1.Text = "BOOKERS.APP Merupakan Aplikasi CRUD\r\nyang menggunakan mysql dan memiliki konsep \r" +
+    "\nuntuk booking ticket.\r\n\r\nAplikasi ini terinspirasi dari aplikasi TIX ID\r\n\r\ndibu" +
+    "at oleh Rofi Nafiis Zain 1214017\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button7

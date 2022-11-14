@@ -29,6 +29,7 @@ namespace Ticketingtm
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Fungsi Insert Untuk booking tiket
             MySqlConnection connect = new MySqlConnection("server=localhost;userid=root;password=;database=db_ticket");
             string kode, seat, user, book;
             book = txt_book.Text;

@@ -43,11 +43,11 @@ namespace Ticketingtm
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(332, 91);
+            this.label1.Location = new System.Drawing.Point(260, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 62);
+            this.label1.Size = new System.Drawing.Size(416, 155);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Selamat Datang di \r\nBOOKERS.APP";
+            this.label1.Text = "Selamat Datang di \r\nBOOKERS.APP\r\n\r\n\r\nYUK BOOKING TICKET NONTON KAMU!\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button1
