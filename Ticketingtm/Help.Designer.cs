@@ -133,7 +133,6 @@ namespace Ticketingtm
             this.label1.TabIndex = 17;
             this.label1.Text = "Menu Bookinganku untuk mengecek daftar booking hapus dan edit data";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
